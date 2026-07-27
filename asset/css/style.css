@@ -28,6 +28,7 @@ body {
 #navbar #logoyt .logo img {
     height: auto;
     width: 150px;
+    padding-top: 5%;
 }
 #navbar #logoyt .logo img:hover {
     transform: scale(1.1);
