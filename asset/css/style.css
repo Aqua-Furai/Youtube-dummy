@@ -3,6 +3,7 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    margin-left: 0;
 }
 
 #navbar {
@@ -17,6 +18,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 2%;
+    margin-left: 1%;
 }
 #navbar #logoyt .menu {
     font-size: 25px;
@@ -87,6 +89,7 @@ body {
     justify-content: space-between;
     background-color: #242424;
     border: 1px solid gray;
+    cursor: pointer;
 }
 
 /*-- User section --*/
@@ -98,6 +101,8 @@ body {
 } 
 #navbar #user .setting {
     font-size: xx-large;
+    cursor: pointer;
+    padding-right: 1%;
 }
 #navbar #user .profile .signin-btn {
     display: flex;
@@ -130,6 +135,12 @@ body {
     z-index: 10;
     background-color: rgba(15, 15, 15, 0.95);
     border-bottom: 1px solid #3f3f3f;
+    font-size: 13px;
+    padding: 10px 2px;
+    width: 250px;
+    height: 100vh;
+    background-color: #0f0f0f;
+    padding-top: 10px;
 }
 #content #sidebar ul {
     padding: 0;
@@ -147,13 +158,6 @@ body {
     height: 24px;
     width: 24px;
 }
-#content #sidebar {
-    padding: 10px 2px;
-    width: 200px;
-    height: 100vh;
-    background-color: #0f0f0f;
-    padding-top: 10px;
-}
 #content #sidebar ul li:hover {
     background-color: #272727;
     cursor: pointer;
@@ -168,6 +172,28 @@ body {
     padding-left: 10%;
     font-size: 20px;
     font-weight: 545;
+}
+#content #sidebar .moreyttext {
+    padding-top: 5%;
+    padding-left: 10%;
+    font-size: 20px;
+    font-weight: 545;
+}
+#content #sidebar a {
+    color: whitesmoke;
+}
+#content #sidebar .about {
+    font-size: 15px;
+    padding: 25px;
+}
+#content #sidebar .terms .points li {
+    padding: 3%;
+    font-size: 15px;
+}
+#content #sidebar #footer {
+    font-size: 15px;
+    padding-left: 6%;
+    
 }
 
 /*-- content aria --*/
