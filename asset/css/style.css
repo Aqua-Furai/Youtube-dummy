@@ -138,7 +138,7 @@ body {
     background-color: rgba(15, 15, 15, 0.95);
     font-size: 13px;
     padding: 10px 2px;
-    width: 235px;
+    width: 220px;
     background-color: #0f0f0f;
     padding-top: 10px;
     display: flex;
@@ -155,7 +155,7 @@ body {
 #sidebar ul li {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 5px;
     padding: 5px;
     flex-direction: row;
 }
@@ -190,11 +190,11 @@ body {
 }
 #sidebar #hide .about {
     font-size: 15px;
-    padding: 25px;
+    padding: 20px;
     flex-wrap: wrap;
-}
-#sidebar #hide .about a {
-    padding: 2%;
+    a {
+        padding: 2%;
+    }
 }
 #sidebar #hide .terms .points li {
     padding: 2%;
@@ -257,6 +257,40 @@ body {
 #content-aria {
     width: 100%;
 }
+#morecontent .cm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 12px;
+    width: 100%;
+    overflow: hidden;
+
+    .c {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 32px;
+        padding: 0 12px;
+        border-radius: 8px;
+        background-color: #272727;
+        color: #f1f1f1;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        white-space: nowrap;
+        flex-shrink: 0;
+        transition: background-color 0.1s ease;
+    }
+}
+#morecontent .cm .c:hover {
+    background-color: #3f3f3f;
+}
+#morecontent .cn .c.active {
+  background-color: #ffffff;
+  color: #0f0f0f;
+}
 
 #videocards {
     display: grid;
@@ -273,13 +307,23 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     font-size: 14px;
+
 
     .detail {
         display: flex;
         flex-wrap: wrap;
         width: 275px;
+        padding-top: 7px;
+
+        .channel {
+            padding-top: 2%
+        }
+
+        .time {
+            padding-left: 2%;
+            padding-top: 2%;
+        }
     }
 
     img {
@@ -288,4 +332,5 @@ body {
 }
 .more {
     font-size: 20px;
+    padding-top: 10px;
 }
